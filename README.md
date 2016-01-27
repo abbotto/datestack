@@ -29,3 +29,6 @@ Convert date strings into objects
         "offset": -3.5,
         "epoch": 1453897386122
     }
+
+# Sandbox
+http://codepen.io/abbotto/pen/OMvqmr
