@@ -24,11 +24,11 @@
 
     // DEFINE WINDOW.META
     var _dateStack = window.dateStack,
-        _$DATE;
+        _$date;
 
-    // Only set the $DATE global if it is not being used by another library
-    if (typeof window.$DATE === 'undefined') {
-        window.$DATE = _$DATE = _dateStack;
+    // Only set the $date global if it is not being used by another library
+    if (typeof window.$date === 'undefined') {
+        window.$date = _$date = _dateStack;
     }
 
     var convertDate = function(date, settings){
@@ -168,7 +168,7 @@
         // Pass 'init' the dateStack prototype for later instantiation
         dateStack.fn.init.prototype = dateStack.fn;
 
-        // Return the dateStack object and set window.$DATE only if it is undefined
-        return (_$DATE === window.$DATE) ? (window.dateStack = window.$DATE = dateStack) : (window.dateStack = dateStack);
+        // Return the dateStack object and set window.$date only if it is undefined
+        return (_$date === window.$date) ? (window.dateStack = window.$date = dateStack) : (window.dateStack = dateStack);
     })();
 });
